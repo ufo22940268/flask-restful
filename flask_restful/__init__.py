@@ -246,8 +246,8 @@ class Api(object):
         :type e: Exception
 
         """
-        if self._has_fr_route():
-            return self.handle_error(e)
+        #if self._has_fr_route():
+            #return self.handle_error(e)
         return original_handler(e)
 
     def handle_error(self, e):
